@@ -1,8 +1,9 @@
-FROM golang:alpine as builder
+FROM golang:1.21 as builder
 # 设置工作目录
 WORKDIR /gvb
 # 将当前目录内容拷到工作目录 (相对路径)
 COPY . .
+RUN go version
 # 配置 golang 环境
 RUN go env -w GO111MODULE=on \
     && go env -w GOPROXY=https://goproxy.cn,https://goproxy.io,direct \

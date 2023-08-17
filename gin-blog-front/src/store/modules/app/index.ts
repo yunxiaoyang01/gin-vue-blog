@@ -50,8 +50,8 @@ export const useAppStore = defineStore('app', {
       // TODO: 将变量拆分开来
       blogInfo: <BlogInfo>{
         blog_config: {
-          website_name: '阵、雨的个人博客',
-          website_author: '阵、雨',
+          website_name: '爱做饭的程序员的个人博客',
+          website_author: '爱做饭的程序员',
           website_intro: '往事随风而去',
         },
       },

@@ -41,6 +41,7 @@ const coverStyle = computed(() => {
     ? `background: url('${page.cover}') center center / cover no-repeat;`
     : 'background: grey center center / cover no-repeat;'
 })
+console.log(blogConfig)
 </script>
 
 <template>
